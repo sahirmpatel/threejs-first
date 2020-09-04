@@ -64,7 +64,7 @@ window.addEventListener("wheel", onMouseWheel, false);
 
 animate = () => {
   requestAnimationFrame(animate);
-  // cube.rotation.y += 0.01;
+  scene.rotation.y += 0.01;
 
   renderer.render(scene, camera);
 };
@@ -74,7 +74,6 @@ function onMouseWheel(event) {
   console.log("rotating ..");
   document.getElementById("testing").style.color = "red";
 
-  scene.rotation.y += event.deltaY * 0.0005;
   //   cube.rotation.x += event.deltaY * 0.0005;
 }
 
