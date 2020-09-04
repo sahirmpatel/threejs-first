@@ -1,4 +1,5 @@
 let scene, camera, cube, renderer, loader;
+
 init = () => {
   scene = new THREE.Scene();
 
@@ -70,6 +71,8 @@ animate = () => {
 
 function onMouseWheel(event) {
   event.preventDefault();
+  console.log("rotating ..");
+  document.getElementById("testing").style.color = "red";
 
   scene.rotation.y += event.deltaY * 0.0005;
   //   cube.rotation.x += event.deltaY * 0.0005;
