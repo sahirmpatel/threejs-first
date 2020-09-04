@@ -4,7 +4,7 @@ init = () => {
   scene = new THREE.Scene();
 
   camera = new THREE.PerspectiveCamera(
-    50,
+    90,
     window.innerWidth / window.innerHeight,
     5,
     1000
