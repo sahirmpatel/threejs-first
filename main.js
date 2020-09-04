@@ -145,7 +145,9 @@ init = () => {
   const geometry = new THREE.BoxGeometry(3, 3, 3);
   // const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
   //mesh takes in the geometry and the matereial
-  const texture = new THREE.TextureLoader().load("Carbon_Normal.png");
+  const texture = new THREE.TextureLoader().load(
+    "https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/decal/decal-diffuse.png"
+  );
   const material = new THREE.MeshBasicMaterial({ map: texture });
 
   cube = new THREE.Mesh(geometry, material);
